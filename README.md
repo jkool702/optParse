@@ -24,7 +24,7 @@ NOTE: in early development (while options are being frequently changes) it may b
  
     <EXTGLOB> :: <VAR> [<CMD_LIST>]
 
-NOTE: `<EXTGLOB>` may contain multiple space-separated regex matches
+NOTE: `<EXTGLOB>` may contain multiple space-separated extglob matches
 NOTE: if the option does not have an argument, set `<VAR>` to `-`
 
 `optParse` takes this table and constructs a series of `case` matches (1 per line), such that running the arguments (`printf '%s\n' "$@"`) through the `case` statement and sourcing the output will parse the options for you. 
